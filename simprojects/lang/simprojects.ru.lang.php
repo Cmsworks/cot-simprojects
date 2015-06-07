@@ -15,4 +15,4 @@ defined('COT_CODE') or die('Wrong URL.');
 $L['cfg_relev'] = array('Релевантность');
 $L['cfg_limit'] = array('Число похожих проектов для вывода');
 
-$L['simproducts'] = 'Похожие проекты';
+$L['simprojects'] = 'Похожие проекты';
