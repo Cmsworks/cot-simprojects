@@ -28,7 +28,7 @@ $simprojects_order = array();
 $simprojects_where['state'] = "item_state=0";
 $simprojects_where['currentproduct'] = "item_id!=".$item['item_id'];
 
-$simprojects_where['similar'] = "MATCH (`item_title`) AGAINST ('*".$item['item_title']."*' IN BOOLEAN MODE)>".$cfg['plugin']['simprojects']['relev'];
+$simprojects_where['similar'] = "MATCH (`item_title`) AGAINST ('*".$db->prep($item['item_title'])."*' IN BOOLEAN MODE)>".$cfg['plugin']['simprojects']['relev'];
 
 $simprojects_order['date'] = "item_date DESC";
 
